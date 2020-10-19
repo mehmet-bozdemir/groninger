@@ -32,12 +32,12 @@
         <div class="d-flex col-12">
             <div class="col-2 ">
                 <img style="height: 80px"
-                     class=" my-2 rounded-circle" style="height:100px" src="images/groningen-logo.png"
+                     class=" my-2 rounded-circle" style="height:100px" src="uploads/groningen-logo.png"
                      alt="groningenIcon">
             </div>
             <div class="col-8 ">
                 <div class="text-center p-4">
-                    <h1 class="h1" style="font-family: 'Pacifico', cursive">Groningen, the secret gem of the NORTH...</h1>
+                    <h1 class="h2" style="font-family: 'Pacifico', cursive">Groningen, the secret gem of the NORTH...</h1>
                 </div>
 
             </div>

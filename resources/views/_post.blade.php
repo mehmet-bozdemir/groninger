@@ -6,7 +6,7 @@
         <h2>{{$post->subtitle}}</h2>
     </div>
     <div class="my-4">
-        <img class="rounded mr-2" style="height:600px" src="{{$post->image}}" alt="{{$post->image}}">
+        <img class="rounded mr-2" style="height:450px" src="{{$post->image}}" alt="{{$post->image}}">
     </div>
     <div>
         <img class="rounded-circle mr-2" style="height:40px" src="{{auth()->user()->image}}" alt="">

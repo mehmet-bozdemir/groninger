@@ -15,7 +15,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+            return view('home', [
+                'posts' => Post::all()
+            ]);
     }
 
     /**
@@ -25,7 +27,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        //
+        return view('post._publish-blog-panel');
     }
 
     /**

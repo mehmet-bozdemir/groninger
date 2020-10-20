@@ -6,19 +6,21 @@
             @include('_sidebar-links')
         </div>
         <div class="col-10">
-            @include('_publish-blog-panel')
-
-            <div class="border border-gray rounded-lg mt-2">
-                @foreach ($posts as $post)
-                    @include('_post')
-                @endforeach
+            <div class="d-flex justify-content-center align-items-center">
+                <div class="p-2 d-inline-block bg-dark rounded mb-2">
+                    <a href="{{route('postForm')}}" class="text-decoration-none">
+                        <h4 class="m-0 text-white font-italic">Post your blog!</h4>
+                    </a>
+                </div>
             </div>
+            @foreach ($posts as $post)
+                @include('_post')
+            @endforeach
         </div>
-        <div class="col-1 pr-0">
+        <div class="col-1 p-0">
             @include('_friends-list')
         </div>
     </div>
-
 @endsection
 
 

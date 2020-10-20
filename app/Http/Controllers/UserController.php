@@ -19,6 +19,13 @@ class UserController extends Controller
 
     public function index()
     {
+        return view('profile.profiles', [
+            'profiles' => User::all()
+        ]);
+    }
+
+    public function create()
+    {
         return view('auth.profile');
     }
 
@@ -28,6 +35,9 @@ class UserController extends Controller
         $request->validate([
             'name'              =>  'required',
 //            'image'     =>  'required|image|mimes:jpeg,png,jpg,gif|max:20000',
+            'company' => 'required',
+            'location' => 'required',
+            'story' => 'required',
             'image'=> ['required', 'image']
         ]);
 
@@ -51,10 +61,18 @@ class UserController extends Controller
 
 
         $user->image = $imagePath;
+        $user->company = $request->company;
+        $user->location = $request->location;
+        $user->story = $request->story;
         // Persist user record to database
         $user->save();
 
         // Return user back and show a flash message
         return redirect('home');
+    }
+
+    public function show(User $user)
+    {
+        return view('profile.profile', compact('user'));
     }
 }

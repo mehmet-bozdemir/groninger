@@ -32,7 +32,7 @@
         <div class="d-flex col-12">
             <div class="col-2 ">
                 <img style="height: 80px"
-                     class=" my-2 rounded-circle" style="height:100px" src="uploads/groningen-logo.png"
+                     class=" my-2 rounded-circle" style="height:100px" src="/uploads/groningen-logo.png"
                      alt="groningenIcon">
             </div>
             <div class="col-8 ">
@@ -58,7 +58,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <!-- Left Side Of Navbar -->
                 <ul class="navbar-nav mr-auto">
-
+                    @include('_leftside-navbarLinks')
                 </ul>
 
                 <!-- Right Side Of Navbar -->
@@ -85,7 +85,7 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('profile') }}">Add Image</a>
+                                <a class="dropdown-item" href="{{ route('profileForm') }}">Update Profile</a>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">

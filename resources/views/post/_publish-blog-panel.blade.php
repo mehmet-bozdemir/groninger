@@ -1,9 +1,7 @@
-<div class="m-3 text-center">
-    <div class="p-2 d-inline-block text-white bg-dark rounded">
-        <h4 class="m-0 font-italic">Post your blog!</h4>
-    </div>
-</div>
-<form action="{{ route('ekrem') }}" method="POST" role="form" enctype="multipart/form-data">
+@extends('layouts.app')
+
+@section('content')
+<form action="{{ route('home.store') }}" method="POST" role="form" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
         <input type="text" class="form-control" name="title" value="" id="title" placeholder="title">
@@ -22,4 +20,4 @@
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
+@endsection

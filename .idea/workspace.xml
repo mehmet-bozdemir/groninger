@@ -20,17 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae224a2e-7aae-47a5-9a9b-24c62c3980c0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/_leftside-navbarLinks.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/1.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/2.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/groningen-logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/groningenCentral.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/groningenIcon.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/post.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_friends-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_friends-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/_post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_post.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_publish-blog-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post/_publish-blog-panel.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_sidebar-links.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_sidebar-links.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,6 +178,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/profile" />
+      <recent name="$PROJECT_DIR$/resources/views/post" />
+      <recent name="$PROJECT_DIR$/resources/views" />
       <recent name="$PROJECT_DIR$/public/images" />
     </key>
   </component>
@@ -196,7 +200,9 @@
       <updated>1602851688548</updated>
       <workItem from="1602851689896" duration="25121000" />
       <workItem from="1602913409653" duration="38190000" />
-      <workItem from="1603051114645" duration="4263000" />
+      <workItem from="1603051114645" duration="5519000" />
+      <workItem from="1603095496784" duration="16325000" />
+      <workItem from="1603171034151" duration="7326000" />
     </task>
     <servers />
   </component>
@@ -213,6 +219,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1553" y="329" key="#Inspections" timestamp="1602883490485">
@@ -223,14 +230,14 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1512" y="226" key="#PHP/0.23.2560.1337@0.23.2560.1337" timestamp="1603050462283" />
-    <state x="1626" y="368" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602968849777">
+    <state x="1626" y="368" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603175406167">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1626" y="368" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1602968849777" />
-    <state x="1704" y="537" key="NewPhpFileDialog" timestamp="1602944424882">
+    <state x="1626" y="368" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603175406167" />
+    <state x="1704" y="537" key="NewPhpFileDialog" timestamp="1603174981096">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1704" y="537" key="NewPhpFileDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1602944424882" />
+    <state x="1704" y="537" key="NewPhpFileDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603174981096" />
     <state x="1309" y="209" key="SettingsEditor" timestamp="1603050835205">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -247,11 +254,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/_publish-blog-panel.blade.php</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
           <line>72</line>

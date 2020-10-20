@@ -41,7 +41,6 @@ class PostController extends Controller
 //        dd(request()->all());
         // Form validation
         $data = request()->validate([
-//            'user_id'=>'required',
             'title' => 'required',
             'subtitle' => 'required',
             'body' => 'required',
@@ -82,10 +81,6 @@ class PostController extends Controller
 
 //        session()->flash('success','Operation succeed');
         return redirect('home');
-
-
-
-
 
     }
 

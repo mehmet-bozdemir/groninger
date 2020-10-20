@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Follow;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class FollowController extends Controller
@@ -30,12 +31,14 @@ class FollowController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @param User $user
+     * @return void
      */
-    public function store(Request $request)
+    public function store(User $user)
     {
-        //
+        auth()->user()->follow($user);
+
+        return redirect('/home');
     }
 
     /**

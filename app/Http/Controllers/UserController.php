@@ -34,7 +34,6 @@ class UserController extends Controller
         // Form validation
         $request->validate([
             'name'              =>  'required',
-//            'image'     =>  'required|image|mimes:jpeg,png,jpg,gif|max:20000',
             'company' => 'required',
             'location' => 'required',
             'story' => 'required',
@@ -52,9 +51,9 @@ class UserController extends Controller
         $user->name = $request->input('name');
 
         // Check if a profile image has been uploaded
-//        if ($request->hasFile('image')) {
+//            if ($request->hasFile('image')) {
 //            $extension = $request->image->extension();
-////            $path = $request->image->path();
+//            $path = $request->image->path();
 //
 //           $path = $request->image->storeAs('images', $user->id.'.'.$extension);
 //        }

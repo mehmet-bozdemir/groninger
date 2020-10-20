@@ -30,20 +30,25 @@
 <div id="app" class="container">
     <section>
         <div class="d-flex col-12">
-            <div class="col-2 ">
+            <div class="col-2 d-flex align-items-center justify-content-center">
                 <img style="height: 80px"
                      class=" my-2 rounded-circle" style="height:100px" src="/uploads/groningen-logo.png"
                      alt="groningenIcon">
             </div>
             <div class="col-8 ">
                 <div class="text-center p-4">
-                    <h1 class="h2" style="font-family: 'Pacifico', cursive">Groningen, the secret gem of the NORTH...</h1>
+                    <h1 class="h2" style="font-family: 'Pacifico', cursive">Groningen, the secret gem of the
+                        NORTH...</h1>
                 </div>
-
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-center">
+                <img style="height: 80px"
+                     class=" my-2 rounded-circle" style="height:100px" src="/uploads/groningen-logo.png"
+                     alt="groningenIcon">
             </div>
         </div>
     </section>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark shadow-sm mb-3">
         <div class="container">
             <a class="navbar-brand" href="{{ url('/') }}">
                 {{--                    {{ config('app.name', 'Laravel') }}--}}
@@ -103,7 +108,7 @@
         </div>
     </nav>
 
-    <main class="py-4">
+    <main class="container">
         @yield('content')
     </main>
 </div>

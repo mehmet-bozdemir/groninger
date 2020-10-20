@@ -20,17 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae224a2e-7aae-47a5-9a9b-24c62c3980c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/_leftside-navbarLinks.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FollowController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FollowController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_publish-blog-panel.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post/_publish-blog-panel.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/_sidebar-links.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_sidebar-links.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/profile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Follow.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Follow.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_friends-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_friends-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_leftside-navbarLinks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_leftside-navbarLinks.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profile/profiles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/profiles.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -202,7 +202,7 @@
       <workItem from="1602913409653" duration="38190000" />
       <workItem from="1603051114645" duration="5519000" />
       <workItem from="1603095496784" duration="16325000" />
-      <workItem from="1603171034151" duration="7326000" />
+      <workItem from="1603171034151" duration="17771000" />
     </task>
     <servers />
   </component>
@@ -230,10 +230,22 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1512" y="226" key="#PHP/0.23.2560.1337@0.23.2560.1337" timestamp="1603050462283" />
+    <state x="1614" y="380" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603192732583">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1614" y="380" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603192732583" />
     <state x="1626" y="368" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1603175406167">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1626" y="368" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603175406167" />
+    <state x="1650" y="443" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1" timestamp="1603192840756">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1650" y="443" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1/0.23.2560.1337@0.23.2560.1337" timestamp="1603192840756" />
+    <state x="1624" y="338" key="NewPhpClassDialog" timestamp="1603192688362">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1624" y="338" key="NewPhpClassDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603192688362" />
     <state x="1704" y="537" key="NewPhpFileDialog" timestamp="1603174981096">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -246,17 +258,17 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1515" y="304" key="run.anything.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1603050558617" />
-    <state x="1515" y="286" width="838" height="1032" key="search.everywhere.popup" timestamp="1603050757037">
+    <state x="1515" y="286" width="838" height="1032" key="search.everywhere.popup" timestamp="1603193193611">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1515" y="286" width="838" height="1032" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1603050757037" />
+    <state x="1515" y="286" width="838" height="1032" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1603193193611" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/layouts/app.blade.php</url>
-          <line>72</line>
+          <line>77</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>

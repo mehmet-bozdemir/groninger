@@ -27,6 +27,7 @@ Route::get('/posts/create', '\App\Http\Controllers\PostController@create')->name
 Route::middleware('auth')->group(function(){
     Route::get('/home', '\App\Http\Controllers\PostController@index')->name('home');
     Route::post('/posts', '\App\Http\Controllers\PostController@store')->name('home.store');
+    Route::post('/profiles/{user}/follow', '\App\Http\Controllers\FollowController@store');
 });
 
 Auth::routes();

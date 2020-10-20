@@ -9,7 +9,7 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
-    use HasFactory, Notifiable;
+    use HasFactory, Notifiable, Fallowable;
 
     /**
      * The attributes that are mass assignable.
@@ -49,11 +49,4 @@ class User extends Authenticatable
         return $this->hasMany(Post::class)->latest();
     }
 
-    public function follow(User $user){
-        return $this->follows()->save($user);
-    }
-
-    public function follows(){
-        return $this->belongsToMany(User::class, 'follows', 'user_id', 'following_id');
-    }
 }

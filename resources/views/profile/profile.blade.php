@@ -14,7 +14,7 @@
                     </div>
                     <div class="card-body col-9 text-center">
                         <h1 class="card-title">{{$user->name}}</h1>
-                        <span class="badge badge-dark"><h2>Story</h2></span>
+                        <h2 class=" d-inline-block rounded px-2 bg-dark text-white font-italic">Story</h2>
                         <p class="card-text">{{$user->story}}</p>
                     </div>
                 </div>

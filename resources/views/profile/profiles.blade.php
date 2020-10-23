@@ -30,9 +30,9 @@
                         @endif
                     </div>
                     <div class="d-flex justify-content-around border-top mx-0 mt-3 pt-3 text-muted font-italic">
-                        <h6 class="mr-2">3 posts</h6>
-                        <h6 class="mx-1">22 followers</h6>
-                        <h6 class="ml-2">33 following</h6>
+                        <h6 class="mr-2">333 posts</h6>
+                        <h6 class="mx-1">{{auth()->user()->sumFollowers($user)}} followers</h6>
+                        <h6 class="ml-2">{{$user->sumFollowings($user)}} following</h6>
                     </div>
                     @if(auth()->user() != $user)
 {{--                        @if(auth()->user()->isNot($user))--}}

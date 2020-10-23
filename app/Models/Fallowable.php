@@ -11,15 +11,16 @@ trait Fallowable
         return $this->follows()->save($user);
     }
 
-//    public function sumFollowings(User $user)
-//    {
-//        return count($this->follows()->where('user_id', $user->id)->get());
-//    }
-//
-//    public function sumFollowers(User $user)
-//    {
-//        return count($this->follows()->where('following_id', $user->id)->get());
-//    }
+    public function sumFollowings(User $user)
+    {
+        return $this->follows()->where('user_id', $user->id)->count();
+    }
+
+    public function sumFollowers(User $user)
+
+    {
+        return $this->follows()->where('following_id', $user->id)->count();
+    }
 
     public function unfollow(User $user)
     {

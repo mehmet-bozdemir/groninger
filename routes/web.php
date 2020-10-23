@@ -17,8 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/profile', '\App\Http\Controllers\UserController@create')->name('profileForm');
+Route::get('/profileform', '\App\Http\Controllers\UserController@create')->name('profileForm');
+Route::get('/profileimageform', '\App\Http\Controllers\UserController@createImage')->name('profileImageForm');
 Route::post('/profile/update', '\App\Http\Controllers\UserController@updateProfile')->name('profileUpdate');
+Route::post('/profile/imageupdate', '\App\Http\Controllers\UserController@updateProfileImage')->name('profileImageUpdate');
 Route::get('/profiles', '\App\Http\Controllers\UserController@index')->name('profiles');
 Route::get('/profiles/{user}', '\App\Http\Controllers\UserController@show')->name('profile');
 

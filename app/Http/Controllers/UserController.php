@@ -43,29 +43,14 @@ class UserController extends Controller
             'company' => 'required',
             'location' => 'required',
             'story' => 'required',
-//            'image'=> ['required', 'image']
         ]);
-
-
-//        $imagePath = request('image')->store('uploads', 'public');
-
-//        dd($imagePath);
 
         // Get current user
         $user = User::findOrFail(auth()->user()->id);
         // Set user name
         $user->name = $request->input('name');
 
-        // Check if a profile image has been uploaded
-//            if ($request->hasFile('image')) {
-//            $extension = $request->image->extension();
-//            $path = $request->image->path();
-//
-//           $path = $request->image->storeAs('images', $user->id.'.'.$extension);
-//        }
-
-
-//        $user->image = $imagePath;
+        // $user->image = $imagePath;
         $user->company = $request->company;
         $user->location = $request->location;
         $user->story = $request->story;

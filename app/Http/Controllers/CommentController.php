@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comment;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class CommentController extends Controller
@@ -14,7 +15,7 @@ class CommentController extends Controller
      */
     public function index()
     {
-        //
+       //
     }
 
     /**
@@ -22,9 +23,12 @@ class CommentController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Post $post)
     {
-        //
+        return view('comments.commentForm', [
+            'post' => $post,
+            'comments' => Comment::all()
+        ]);
     }
 
     /**
@@ -33,9 +37,21 @@ class CommentController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Post $post)
     {
-        //
+//        return($post->id);
+        $data = request()->validate([
+            'text' => 'required',
+        ]);
+
+        Comment::create([
+            'post_id' => $post->id,
+            'text' => $data['text'],
+        ]);
+
+        return back();
+
+
     }
 
     /**

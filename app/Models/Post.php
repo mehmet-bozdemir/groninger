@@ -23,5 +23,9 @@ class Post extends Model
         return $this->morphToMany(Tag::class, 'taggable');
     }
 
+    public function totalComments(Post $post)
+    {
+        return $this->comments()->where('post_id', $post->id)->count();
+    }
 }
 

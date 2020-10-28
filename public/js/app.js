@@ -8061,7 +8061,7 @@ getText = Sizzle.getText = function( elem ) {
 		// If no nodeType, this is expected to be an array
 		while ( ( node = elem[ i++ ] ) ) {
 
-			// Do not traverse comment nodes
+			// Do not traverse comments nodes
 			ret += getText( node );
 		}
 	} else if ( nodeType === 1 || nodeType === 9 || nodeType === 11 ) {
@@ -8081,7 +8081,7 @@ getText = Sizzle.getText = function( elem ) {
 		return elem.nodeValue;
 	}
 
-	// Do not include comment or processing instruction nodes
+	// Do not include comments or processing instruction nodes
 
 	return ret;
 };
@@ -8541,7 +8541,7 @@ Expr = Sizzle.selectors = {
 
 			// http://www.w3.org/TR/selectors/#empty-pseudo
 			// :empty is negated by element (1) or content nodes (text: 3; cdata: 4; entity ref: 5),
-			//   but not by others (comment: 8; processing instruction: 7; etc.)
+			//   but not by others (comments: 8; processing instruction: 7; etc.)
 			// nodeType < 6 works because attributes (2) do not appear as children
 			for ( elem = elem.firstChild; elem; elem = elem.nextSibling ) {
 				if ( elem.nodeType < 6 ) {
@@ -13227,7 +13227,7 @@ jQuery.extend( {
 	// Get and set the style property on a DOM Node
 	style: function( elem, name, value, extra ) {
 
-		// Don't set styles on text and comment nodes
+		// Don't set styles on text and comments nodes
 		if ( !elem || elem.nodeType === 3 || elem.nodeType === 8 || !elem.style ) {
 			return;
 		}
@@ -14331,7 +14331,7 @@ jQuery.extend( {
 		var ret, hooks,
 			nType = elem.nodeType;
 
-		// Don't get/set attributes on text, comment and attribute nodes
+		// Don't get/set attributes on text, comments and attribute nodes
 		if ( nType === 3 || nType === 8 || nType === 2 ) {
 			return;
 		}
@@ -14463,7 +14463,7 @@ jQuery.extend( {
 		var ret, hooks,
 			nType = elem.nodeType;
 
-		// Don't get/set properties on text, comment and attribute nodes
+		// Don't get/set properties on text, comments and attribute nodes
 		if ( nType === 3 || nType === 8 || nType === 2 ) {
 			return;
 		}
@@ -14967,7 +14967,7 @@ jQuery.extend( jQuery.event, {
 
 		cur = lastElement = tmp = elem = elem || document;
 
-		// Don't do events on text and comment nodes
+		// Don't do events on text and comments nodes
 		if ( elem.nodeType === 3 || elem.nodeType === 8 ) {
 			return;
 		}
@@ -15364,7 +15364,7 @@ var
 	 */
 	transports = {},
 
-	// Avoid comment-prolog char sequence (#10098); must appease lint and evade compression
+	// Avoid comments-prolog char sequence (#10098); must appease lint and evade compression
 	allTypes = "*/".concat( "*" ),
 
 	// Anchor tag for parsing the document origin
@@ -17196,7 +17196,7 @@ jQuery.noConflict = function( deep ) {
 };
 
 // Expose jQuery and $ identifiers, even in AMD
-// (#7102#comment:10, https://github.com/jquery/jquery/pull/557)
+// (#7102#comments:10, https://github.com/jquery/jquery/pull/557)
 // and CommonJS for browser emulators (#13566)
 if ( typeof noGlobal === "undefined" ) {
 	window.jQuery = window.$ = jQuery;
@@ -23338,7 +23338,7 @@ return jQuery;
     }
 
     /**
-     * Extracts wrapper details from the `source` body comment.
+     * Extracts wrapper details from the `source` body comments.
      *
      * @private
      * @param {string} source The source to inspect.
@@ -23461,7 +23461,7 @@ return jQuery;
     }
 
     /**
-     * Inserts wrapper `details` in a comment at the top of the `source` body.
+     * Inserts wrapper `details` in a comments at the top of the `source` body.
      *
      * @private
      * @param {string} source The source to modify.
@@ -23900,7 +23900,7 @@ return jQuery;
 
     /**
      * Sets the `toString` method of `wrapper` to mimic the source of `reference`
-     * with wrapper details in a comment at the top of the source body.
+     * with wrapper details in a comments at the top of the source body.
      *
      * @private
      * @param {Function} wrapper The function to modify.
@@ -32046,7 +32046,7 @@ return jQuery;
       // Use a sourceURL for easier debugging.
       // The sourceURL gets injected into the source that's eval-ed, so be careful
       // to normalize all kinds of whitespace, so e.g. newlines (and unicode versions of it) can't sneak in
-      // and escape the comment, thus injecting code that gets evaled.
+      // and escape the comments, thus injecting code that gets evaled.
       var sourceURL = '//# sourceURL=' +
         (hasOwnProperty.call(options, 'sourceURL')
           ? (options.sourceURL + '').replace(/\s/g, ' ')
@@ -45168,7 +45168,7 @@ function getNextHydratableInstanceAfterSuspenseInstance(suspenseInstance) {
     }
 
     node = node.nextSibling;
-  } // TODO: Warn, we didn't find the end comment boundary.
+  } // TODO: Warn, we didn't find the end comments boundary.
 
 
   return null;
@@ -45343,7 +45343,7 @@ function getClosestInstanceFromNode(targetNode) {
 
           if (targetSuspenseInst) {
             return targetSuspenseInst;
-          } // If we don't find a Fiber on the comment, it might be because
+          } // If we don't find a Fiber on the comments, it might be because
           // we haven't gotten to hydrate it yet. There might still be a
           // parent boundary that hasn't above this one so we need to find
           // the outer most that is known.

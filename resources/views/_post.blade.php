@@ -32,4 +32,13 @@
             </div>
         </form>
     </div>
+    <div class="d-flex align-items-center justify-content-center">
+        <a href="/comments/{{$post->id}}/create">
+            <button type="button" class="btn btn-secondary px-1 py-0">
+                <i class="far fa-comments fa-lg"></i>
+                <span>{{$post->totalComments($post)}}</span>
+            </button>
+        </a>
+    </div>
+
 </div>

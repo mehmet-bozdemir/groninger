@@ -27,24 +27,16 @@ trait Fallowable
             return $this->unfollow($user);
         }
         $this->follow($user);
-
     }
-
-//    public function follows()
-//    {
-//        return $this->belongsToMany(User::class, 'follows' );
-//    }
 
     public function sumFollowings(User $user)
     {
-//        $user = auth()->user()->id;
 
         return $this->following()->get()->count();
     }
 
     public function sumFollowers(User $user)
     {
-//        dd($this->follows());
 
         return $this->followers()->get()->count();
 

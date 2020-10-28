@@ -39,7 +39,7 @@ class PostController extends Controller
     public function store()
     {
 //        dd(request()->all());
-        // Form validation
+
         $data = request()->validate([
             'title' => 'required',
             'subtitle' => 'required',
@@ -56,30 +56,7 @@ class PostController extends Controller
             'body' => $data['body'],
             'image' => $imagePath
         ]);
-//        $post= new Post;
-//
-//        $post->user_id=auth()->user()->id;
-//        $post->title=$request->title;
-//        $post->subtitle=$request->subtitle;
-//        $post->body=$request->body;
-//
-//        if ($request->hasFile('image')) {
-//            $extension = $request->image->extension();
-//
-//            $path = $request->image->storeAs('images', $post->id.'post'.'.'.$extension);
-//        }
-//
-//        $post->image = $path;
-//
-//        Post::create([
-//            'user_id' =>$this->user_id,
-//            'title' =>$this->title,
-//            'subtitle'=>$this->subtitle,
-//            'image' =>$this->image,
-//            'body' => $this->body
-//        ]);
 
-//        session()->flash('success','Operation succeed');
         return redirect('home');
 
     }
@@ -131,41 +108,4 @@ class PostController extends Controller
 }
 
 
-//
-//        $image=$request->file('image');
-//        $filename=$image->getClientOriginalName();
-//
-//        Storage::disk('public')->put('/imagesPost/'.$filename,file_get_contents($request->file('image')->getRealPath()));
-//
-//        $post->image=$filename;
-//
-//        $post->save();
-//
 
-
-//        if ($request->hasFile('image')) {
-//            $extension = $request->image->extension();
-////            $path = $request->image->path();
-//
-//            $path = $request->image->storeAs('images', $post->id.'.'.$extension);
-//        }
-
-
-//$post= new Post;
-//
-//$post->user_id=auth()->user()->id;
-//$post->title=$request->title;
-//$post->subtitle=$request->subtitle;
-//$post->body=$request->body;
-//
-//if ($request->hasFile('image')) {
-//    $extension = $request->image->extension();
-//
-//    $path = $request->image->storeAs('images', $post->id.'post'.'.'.$extension);
-//}
-//
-//$post->image = $path;
-//$post->save();
-//
-////        session()->flash('success','Operation succeed');
-//return redirect('home');

@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
     use HasFactory;
-
+    use Likeable;
     protected  $guarded = [];
 
     public function  user(){
@@ -23,7 +23,5 @@ class Post extends Model
         return $this->morphToMany(Tag::class, 'taggable');
     }
 
-    public function likes(){
-        return $this->hasMany(Like::class);
-    }
 }
+

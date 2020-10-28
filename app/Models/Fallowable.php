@@ -8,42 +8,47 @@ trait Fallowable
 {
     public function follow(User $user)
     {
-        return $this->follows()->save($user);
-    }
-
-    public function sumFollowings(User $user)
-    {
-        return $this->follows()->where('user_id', $user->id)->count();
-    }
-
-    public function sumFollowers(User $user)
-
-    {
-        return $this->follows()->where('following_id', $user->id)->count();
+        return $this->following()->save($user);
     }
 
     public function unfollow(User $user)
     {
-        return $this->follows()->detach($user);
+        return $this->following()->detach($user);
     }
 
-    public function following(User $user)
+    public function isFollowing(User $user)
     {
-        return $this->follows()->where('following_id', $user->id)->exists();
+        return $this->following()->where('following_id', $user->id)->exists();
     }
 
     public function toggleFollow(User $user)
     {
-        if ($this->following($user)) {
+        if ($this->isFollowing($user)) {
             return $this->unfollow($user);
         }
         $this->follow($user);
 
     }
 
-    public function follows()
+//    public function follows()
+//    {
+//        return $this->belongsToMany(User::class, 'follows' );
+//    }
+
+    public function sumFollowings(User $user)
     {
-        return $this->belongsToMany(User::class, 'follows', 'user_id', 'following_id');
+//        $user = auth()->user()->id;
+
+        return $this->following()->get()->count();
     }
+
+    public function sumFollowers(User $user)
+    {
+//        dd($this->follows());
+
+        return $this->followers()->get()->count();
+
+    }
+
 
 }

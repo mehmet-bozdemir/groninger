@@ -30,25 +30,24 @@
                         @endif
                     </div>
                     <div class="d-flex justify-content-around border-top mx-0 mt-3 pt-3 text-muted font-italic">
-                        <h6 class="mr-2">333 posts</h6>
-                        <h6 class="mx-1">{{auth()->user()->sumFollowers($user)}} followers</h6>
+                        <h6 class="mr-2">{{ $user->posts->count()}} posts</h6>
+                        <h6 class="mx-1">{{$user->sumFollowers($user)}} followers</h6>
                         <h6 class="ml-2">{{$user->sumFollowings($user)}} following</h6>
                     </div>
-                    @if(auth()->user() != $user)
-{{--                        @if(auth()->user()->isNot($user))--}}
+{{--                    @if(auth()->user() != $user)--}}
+                        @if(auth()->user()->isNot($user))
 {{--                        @unless(auth()->user()->is($user))--}}
                         <div class="d-flex align-items-center justify-content-center">
                             <form method="POST" action="/profiles/{{$user->id}}/follow">
                                 @csrf
                                 <button type="submit" class="btn btn-sm btn-outline-secondary m-1"
                                 >
-                                   {{auth()->user()->following($user) ? 'UNFOLLOW' : 'FOLLOW'}}
+                                   {{auth()->user()->isFollowing($user) ? 'UNFOLLOW' : 'FOLLOW'}}
                                 </button>
                             </form>
                         </div>
                     @endif
                 </div>
-
             </div>
         @endforeach
     </div>

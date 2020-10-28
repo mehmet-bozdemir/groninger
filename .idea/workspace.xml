@@ -21,22 +21,49 @@
   <component name="ChangeListManager">
     <list default="true" id="ae224a2e-7aae-47a5-9a9b-24c62c3980c0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/LikeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/LikeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Fallowable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Fallowable.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/profile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/profile.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_17_065034_create_follows_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_17_065034_create_follows_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_17_071023_create_likes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_17_071023_create_likes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_friends-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_friends-list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/_post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/_post.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/profile/profiles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profile/profiles.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/2yBxPEDepoSdO5ItxdzuxQ3Ez7SynPvOZuGuOgbS.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/36OCTZX6nbpCmQERNV0vmOq0FvdopKv2MBKt0pmK.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/8BvWUquhvklSp2yC1TdlA4TfckFsA0ghRF9BfyhU.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/8liOifsgmueayW38hOzaCUv4xTCo3jBXEMyPCYDz.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/AxlLdhY9aDlP3HeeQ4YRztGxSwO8JaIq6vSmR30c.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/Bd8A1S1hS00FnSvrBezmhgnZpB0PNm3i0C6cs38s.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/E0KTiEPXH4xHlJhNWN4LOrktdBzfzkDCUeFYmL4C.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/EdEnNPcxHcAzxzEhcPnkZq5P7WrwP3tZGDSLHWqR.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/GL7pnTgVwVRgTj2LAlUfJnxizb7jdO5Y8YBwcOWn.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/JQJ5zTuXnV8rPG96ZxI2rxOrrC8wVIBpjPxB8zd6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/MCX9fOi5FnzlXSmsUFy8VQjAgLQQhSVYAwWhIS1J.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/PfDdQtYFMPiTC4Iuc1ynuKDmN90gp1cB6NBQGSzX.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/RG7BrKriSZ1EcXXX3dzZiVzbCP7w5OySdaCziLuN.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/UU5d0GaRSpCr35gwzHsjudTicwfv8JcLD23Bogog.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/W83kBc9cRUlBIl6JVym2oYDI08vHSij9jDdtlVaB.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/WrxlpSFUwB624Fq89OiBpkm15RZXDix0f4lC0RCg.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/X9cPTIXXfMzauBqGgf2Iq5hp4AJt0NaVlVIbkHC9.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/YboFIoJadKfx7W8tRmDiYOEWAT1gOr6Bdr0W45XB.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/a7P99LFWDC7FpmJBmmYcjO57Pv7ef0uTEwSyGfSr.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/amHshO2oeoXBz63ns9Eiu8OYENsT2rlMLUuSoH9r.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/gqfdVXou3p7MKsBHKUxLHjq3Mb5PRrEYi5aM9E4H.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/ilE3QvfXdKgRhpT27TsCqYvmXZppgTesqRJ9NzTG.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/kiC665XBhwRIayAXq5EVM5DwzGhZNBx20LtFCvU5.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/m6A7Clo2VWls4x6idioeu2Rh9RzKuQSOm5PK5hIQ.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/oaSLdDkT54eVzfkVrc0cgAbb8gnRjsAbTGAz99xI.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/pexels-photo-135161.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/qO9YBKhIdm6E2lWraEPBfGPjVfIMjuYGlg7T26r9.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/rXLixZUUkcUVjHSsp85DsCbEZau48w5IW7LRUqrj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/t87A8kyqjdNXoUfqOly6HWZUFD02LDlJe5dmCgBm.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/wgZfJ6jpVLejM39Y9OwvKvafHzsW3M7lsqSDR0zA.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/app/public/uploads/y5hmUNZsMOxJKHeYSgCD7EhWEgT3E9i5CD09rdnT.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +237,10 @@
       <workItem from="1603095496784" duration="16325000" />
       <workItem from="1603171034151" duration="32596000" />
       <workItem from="1603258986521" duration="31163000" />
-      <workItem from="1603431636386" duration="1341000" />
+      <workItem from="1603431636386" duration="4099000" />
+      <workItem from="1603703052546" duration="23821000" />
+      <workItem from="1603777312007" duration="23169000" />
+      <workItem from="1603869139181" duration="509000" />
     </task>
     <servers />
   </component>
@@ -246,14 +276,14 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1626" y="368" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603175406167" />
-    <state x="1650" y="443" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1" timestamp="1603192840756">
+    <state x="1650" y="443" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1" timestamp="1603798237375">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1650" y="443" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1/0.23.2560.1337@0.23.2560.1337" timestamp="1603192840756" />
-    <state x="1624" y="338" key="NewPhpClassDialog" timestamp="1603192688362">
+    <state x="1650" y="443" key="#com.jetbrains.php.refactoring.pullPush.pullUp.PhpPullUpDialog#1/0.23.2560.1337@0.23.2560.1337" timestamp="1603798237375" />
+    <state x="1624" y="338" key="NewPhpClassDialog" timestamp="1603798172808">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1624" y="338" key="NewPhpClassDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603192688362" />
+    <state x="1624" y="338" key="NewPhpClassDialog/0.23.2560.1337@0.23.2560.1337" timestamp="1603798172808" />
     <state x="1704" y="537" key="NewPhpFileDialog" timestamp="1603348539782">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
@@ -266,9 +296,9 @@
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
     <state x="1515" y="304" key="run.anything.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1603050558617" />
-    <state x="1515" y="286" width="838" height="1032" key="search.everywhere.popup" timestamp="1603220693215">
+    <state x="1515" y="286" width="838" height="1032" key="search.everywhere.popup" timestamp="1603810349587">
       <screen x="0" y="23" width="2560" height="1337" />
     </state>
-    <state x="1515" y="286" width="838" height="1032" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1603220693215" />
+    <state x="1515" y="286" width="838" height="1032" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1603810349587" />
   </component>
 </project>

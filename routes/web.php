@@ -30,8 +30,15 @@ Route::middleware('auth')->group(function(){
     Route::get('/home', '\App\Http\Controllers\PostController@index')->name('home');
     Route::post('/posts', '\App\Http\Controllers\PostController@store')->name('home.store');
     Route::post('/profiles/{user}/follow', '\App\Http\Controllers\FollowController@store');
+
+Route::post('/posts/{post}/like','\App\Http\Controllers\LikeController@store');
+
+Route::delete('/posts/{post}/like','\App\Http\Controllers\LikeController@destroy');
+
+
 });
 
 Auth::routes();
 
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+

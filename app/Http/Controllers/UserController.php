@@ -37,7 +37,6 @@ class UserController extends Controller
 
     public function updateProfile(Request $request)
     {
-        // Form validation
         $request->validate([
             'name'              =>  'required',
             'company' => 'required',
@@ -49,29 +48,23 @@ class UserController extends Controller
         $user = User::findOrFail(auth()->user()->id);
         // Set user name
         $user->name = $request->input('name');
-
         // $user->image = $imagePath;
         $user->company = $request->company;
         $user->location = $request->location;
         $user->story = $request->story;
         // Persist user record to database
         $user->save();
-
         // Return user back and show a flash message
         return redirect('home');
     }
 
     public function updateProfileImage(Request $request)
     {
-        // Form validation
         $request->validate([
             'image'=> ['required', 'image']
         ]);
 
-
         $imagePath = request('image')->store('uploads', 'public');
-
-//        dd($imagePath);
 
         // Get current user
         $user = User::findOrFail(auth()->user()->id);
